@@ -1,3 +1,12 @@
+PROJECT OVERVIEW: 
+
+This project was all about building a user-level thread library to support lightweight processes (LWPs) on Linux. LWPs are threads that run independently and have their own stack but share the same address space. Through this project, many important OS concepts were explored, including:
+- Thread Context Switching: Saving and restoring thread states (registers, floating-point contexts, etc.) using swap_rfiles().
+- Stack Management: Creating and managing thread-specific stacks with mmap() while ensuring everything is properly aligned.
+- Custom Scheduling: Implementing a round-robin scheduler and adding the ability to use custom schedulers for thread management.
+- Thread Lifecycle Management: Writing functions to create, run, yield, and terminate threads, as well as handle synchronization with lwp_wait().
+This project provided hands-on experience with thread execution, context switching, and designing scheduling mechanisms. 
+
 Names: Advika Deodhar and Daniel Gutierrez
 Special Instructions: N/A 
 To know while grading: Nothing much! This was actually pretty cool to learn. Below is all of our pseudocode we wrote while going about this project.
